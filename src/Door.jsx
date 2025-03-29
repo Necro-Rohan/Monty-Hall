@@ -23,7 +23,7 @@ export default function Door({
         <img
           src={hasPrize ? "/car.jpg" : "/goat.jpg"}
           alt={hasPrize ? "Prize" : "Goat"}
-          width="150px"
+          width="100%"
         />
       ) : (
         ""
