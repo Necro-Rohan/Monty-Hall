@@ -51,6 +51,10 @@ button {
   border-radius: 5px;
 }
 
+button:hover {
+  background-color: #21a1f1;
+}
+
 .result {
   margin-top: 20px;
   font-size: 24px;
@@ -72,8 +76,9 @@ button {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  width: 350px;
+  width: 70%;
   box-shadow: 2px 4px 8px gray;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .close-btn {
@@ -82,4 +87,52 @@ button {
   border: none;
   font-size: 20px;
   cursor: pointer;
+}
+
+.close-btn:hover {
+  background: darkred;
+}
+
+@media (max-width: 800px) {
+  .game-container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .doors {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .door {
+    width: 100px;
+    height: 150px;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  .rules {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .door {
+    width: 90px;
+    height: 130px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 }
